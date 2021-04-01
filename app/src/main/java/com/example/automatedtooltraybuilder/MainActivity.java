@@ -1,4 +1,5 @@
 package com.example.automatedtooltraybuilder;
+
 /*
 import android.os.Bundle;
 
@@ -88,6 +89,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MainActivity extends AppCompatActivity {
 
     // Define the pic id
@@ -97,11 +99,23 @@ public class MainActivity extends AppCompatActivity {
     Button camera_open_id;
     ImageView click_image_id;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       // setContentView(R.layout.activity_main);
+
+       /* RecyclerView recyclerView = (RecyclerView)findViewById(R.id.imagegallery);
+        recyclerView.setHasFixedSize(true);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),2);
+        recyclerView.setLayoutManager(layoutManager);
+        ArrayList<CreateList> createLists = prepareData();
+        MyAdapter adapter = new MyAdapter(getApplicationContext(), createLists);
+        recyclerView.setAdapter(adapter);*/
 
         // By ID we can get each component
         // which id is assigned in XML file
@@ -127,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
                 // and request pic id
                 startActivityForResult(camera_intent, pic_id);
             }
+
         });
     }
 
@@ -143,9 +158,11 @@ public class MainActivity extends AppCompatActivity {
             // which stor the image in memory
             Bitmap photo = (Bitmap)data.getExtras()
                     .get("data");
-
+           // imgFolder.setFirstPic("" + pic_id);
             // Set the image in imageview for display
             click_image_id.setImageBitmap(photo);
+            // possibly change this to add to an image gallery
+            //instead of putting it into imageview.
         }
     }
 }

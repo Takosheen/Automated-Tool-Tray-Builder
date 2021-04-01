@@ -1,0 +1,99 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitattributes
+* .gitignore
+* LICENSE
+* README.md
+* deterministic.md
+* docimages\
+* docimages\s1.png
+* docimages\s10.png
+* docimages\s11.png
+* docimages\s12.png
+* docimages\s13.png
+* docimages\s14.png
+* docimages\s15.png
+* docimages\s2.png
+* docimages\s3.png
+* docimages\s4.png
+* docimages\s7.png
+* docimages\s8.png
+* docimages\s9.png
+* ic_launcher-web.png
+* process_overview.md
+* proguard-project.txt
+* testimages\
+* testimages\1.png
+* testimages\10.png
+* testimages\11.png
+* testimages\12.png
+* testimages\13.png
+* testimages\14.png
+* testimages\15.png
+* testimages\16.png
+* testimages\2.png
+* testimages\3.png
+* testimages\4.png
+* testimages\5.png
+* testimages\6.png
+* testimages\7.png
+* testimages\8.png
+* testimages\9.png
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:22.+
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+appcompat-v7 => [com.android.support:appcompat-v7:22.+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => imageTracerApp\src\main\AndroidManifest.xml
+* assets\ => imageTracerApp\src\main\assets\
+* lint.xml => imageTracerApp\lint.xml
+* res\ => imageTracerApp\src\main\res\
+* src\ => imageTracerApp\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
